@@ -1,11 +1,6 @@
 <?php
 
 require_once ('../vendor/autoload.php');
-require_once ('../config/database.php');
-require_once ('../src/Services/DatabaseConnector.php');
+$router = new \Bramus\Router\Router();
 
-// Fetch database connection
-
-// Bootstrap Twig
-
-// and run ...!
+// add your routes and run!
