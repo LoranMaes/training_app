@@ -8,7 +8,6 @@ PHP project folder structure for the course Web &amp; Mobile Server-side, part o
 * [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)
 * [Doctrine DBAL 3.5 documentation](https://www.doctrine-project.org/projects/doctrine-dbal/en/current/index.html)
 * [Twig 3.x documentation](https://twig.symfony.com/doc/3.x/)
-* [bramus/router documentation](https://github.com/bramus/router)
 
 ## Installing and developing your own project based on this boilerplate
 
@@ -45,18 +44,6 @@ The MCE is provided with a `composer.json`/`composer.lock` file, providing the T
 ```shell
 docker-compose exec php-web bash
 $ composer install
-$ exit
-```
-
-## About the autoloader
-
-`composer.json` is configured such that the classes in "src/" (and subfolders), and the file "config/database.php" are autoloaded.
-* This means there is no need to require these classes anymore in your `public/*.php` scripts.
-* You can extend this list yourself in `composer.json`
-* When you changed this list, or you created some new classes, let composer know from your terminal/cmd:
-```shell
-docker-compose exec php-web bash
-$ composer dump-autoload
 $ exit
 ```
 
