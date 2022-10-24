@@ -5,8 +5,8 @@ PHP project folder structure for the course Web &amp; Mobile Server-side, part o
 
 * [Course slides](https://intern.ikdoeict.be/apps/leercentrum/courses/wmss-course-materials/)
 * [PHP Documentation](https://www.php.net/docs.php)
-* [MySQL 5.7 Reference Manual](https://dev.mysql.com/doc/refman/5.7/en/)
-* [Doctrine DBAL 3.1 documentation](https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/index.html)
+* [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)
+* [Doctrine DBAL 3.5 documentation](https://www.doctrine-project.org/projects/doctrine-dbal/en/current/index.html)
 * [Twig 3.x documentation](https://twig.symfony.com/doc/3.x/)
 * [bramus/router documentation](https://github.com/bramus/router)
 
