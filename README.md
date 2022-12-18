@@ -50,7 +50,7 @@ $ exit
 
 ## About the autoloader
 
-`composer.json` is configured such that the classes in "src/" (and subfolders), and the file "config/database.php" are autoloaded.
+`composer.json` is configured such that the classes in "src/" (and subfolders), and the files "config/database.php" and "config/app.php" are autoloaded.
 * This means there is no need to require these classes anymore in your `public/*.php` scripts.
 * You can extend this list yourself in `composer.json`
 * When you changed this list, or you created some new classes, let composer know from your terminal/cmd:
