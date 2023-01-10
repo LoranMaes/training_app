@@ -16,7 +16,7 @@ services:
     ports:
       - "3307:3306"
     volumes:
-      - "./docker/demo.sql:/docker-entrypoint-initdb.d/dump.sql"
+      - "./docker/astride.sql:/docker-entrypoint-initdb.d/dump.sql"
     environment:
       - MYSQL_ROOT_PASSWORD=Azerty123
       - LANG=C.UTF-8

@@ -6,3 +6,5 @@ app/public/.htaccess
 app/vendor
 app/storage/
 app/.env
+database_design.mwb
+ideas.txt
