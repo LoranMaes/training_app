@@ -1,7 +1,5 @@
 <?php
 
-namespace Controllers;
-
 use Services\{DatabaseConnector, MailService};
 
 class AuthController

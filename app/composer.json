@@ -4,7 +4,9 @@
         "twig/twig": "^3.4.3",
         "bramus/router": "~1.6",
         "symfony/mailer": "^6.2",
-        "symfony/twig-bridge": "^6.2"
+        "symfony/twig-bridge": "^6.2",
+        "vlucas/phpdotenv": "^5.5",
+        "symfony/google-mailer": "^6.2"
     },
     "autoload": {
         "classmap": ["src/*"]

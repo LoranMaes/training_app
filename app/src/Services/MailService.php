@@ -3,6 +3,8 @@
 namespace Services;
 
 // USE STATEMENTS HERE
+
+use MessageFormatter;
 use Symfony\Component\Mailer\Transport;
 use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Mime\Email;

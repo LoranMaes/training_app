@@ -1,7 +1,5 @@
 <?php
 
-namespace Controllers;
-
 use Services\{DatabaseConnector, MailService};
 
 class DashboardController
@@ -20,5 +18,10 @@ class DashboardController
             return $_ENV["BASE_PATH"] . $path;
         });
         $this->twig->addFunction($function);
+    }
+
+    public function showDashboard()
+    {
+        echo $this->twig->render('dashboard.twig', []);
     }
 }
