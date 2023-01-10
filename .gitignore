@@ -2,3 +2,7 @@
 .idea
 .vscode
 docker/mysql-data
+app/public/.htaccess
+app/vendor
+app/storage/
+app/.env

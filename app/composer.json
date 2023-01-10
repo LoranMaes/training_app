@@ -1,11 +1,12 @@
 {
     "require": {
-        "doctrine/dbal": "^3.5",
-        "twig/twig": "^3.4",
-        "bramus/router": "^1.6"
+        "doctrine/dbal": "^3.4",
+        "twig/twig": "^3.4.3",
+        "bramus/router": "~1.6",
+        "symfony/mailer": "^6.2",
+        "symfony/twig-bridge": "^6.2"
     },
     "autoload": {
-        "classmap": ["src/"],
-        "files": ["config/database.php", "config/app.php"]
+        "classmap": ["src/*"]
     }
 }
