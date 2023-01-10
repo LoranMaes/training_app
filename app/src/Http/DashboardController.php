@@ -1,6 +1,6 @@
 <?php
 
-use Services\{DatabaseConnector, MailService};
+use Services\{DatabaseConnector, MailService, Calendar};
 
 class DashboardController
 {
@@ -22,6 +22,8 @@ class DashboardController
 
     public function showDashboard()
     {
-        echo $this->twig->render('dashboard.twig', []);
+        echo $this->twig->render('dashboard.twig', [
+            'calendar' => new \Calendar('2021-02-02'),
+        ]);
     }
 }
