@@ -4,7 +4,8 @@ namespace Services;
 
 class DatabaseConnector
 {
-    static function getConnection() : \Doctrine\DBAL\Connection {
+    static function getConnection(): \Doctrine\DBAL\Connection
+    {
         $connectionParams = [
             'url' => 'mysql://' . DB_USER . ':' . DB_PASS . '@' . DB_HOST . '/' . DB_NAME
         ];
@@ -14,15 +15,16 @@ class DatabaseConnector
             $connection->connect();
         } catch (\Doctrine\DBAL\Exception $e) {
             if (DEBUG) {
-                echo($e->getMessage() . PHP_EOL);
+                echo ($e->getMessage() . PHP_EOL);
             } else {
                 $filename = __DIR__ . '/../../storage/db.log';
                 $file = new \SplFileObject($filename, 'a');
                 $file->fwrite(
                     (new \DateTime())->format(\DateTimeInterface::RSS) .
-                    ' - ' .
-                    $e->getMessage() .
-                    PHP_EOL);
+                        ' - ' .
+                        $e->getMessage() .
+                        PHP_EOL
+                );
                 header('Location: /unavailable.html');
             }
             exit();
