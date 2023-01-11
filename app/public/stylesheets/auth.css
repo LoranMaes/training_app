@@ -1,7 +1,8 @@
 /* @TODO: Create bg rotation */
 
 :root{
-    --gradient: linear-gradient(45deg, var(--primary) 0%, var(--secundary) 100%) no-repeat;
+    /* --gradient: linear-gradient(45deg, var(--primary) 0%, var(--secundary) 100%) no-repeat; */
+    --gradient: linear-gradient(45deg, var(--primary) 0%, var(--secundary) 50%, var(--third) 100%) no-repeat;
 }
 
 html{
