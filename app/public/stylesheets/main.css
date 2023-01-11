@@ -37,4 +37,13 @@ body{
     body{
         padding: clamp(1.6rem, 8vw, 4rem);
     }
+
+    .actionLink{
+        transition: all 250ms;
+    }
+
+    .actionLink:hover{
+        transition: all 250ms;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    }
 }

@@ -8,3 +8,5 @@ app/storage/
 app/.env
 database_design.mwb
 ideas.txt
+package-lock.json
+node_modules

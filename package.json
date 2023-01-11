@@ -1,0 +1,25 @@
+{
+  "name": "trainingpeaks",
+  "version": "1.0.0",
+  "description": "PHP project folder structure for the course Web &amp; Mobile Server-side, part of the Professional Bachelor ICT study program.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoranMaes/training_app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LoranMaes/training_app/issues"
+  },
+  "homepage": "https://github.com/LoranMaes/training_app#readme",
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.11.4"
+  }
+}
