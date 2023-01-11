@@ -1,6 +1,4 @@
 /* @TODO: Create bg rotation */
-/* @TODO: Create login form */
-/* @TODO: remove header and footer links */
 
 :root{
     --gradient: linear-gradient(45deg, var(--primary) 0%, var(--secundary) 100%) no-repeat;
@@ -9,9 +7,11 @@
 html{
     background: rgb(30,22,83);
     background: var(--gradient);
+    background-size: 400% 400%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    animation: gradient 15s ease infinite;
 }
 
 body{
@@ -86,4 +86,16 @@ hr{
     #loginBlock form{
         text-align: left;
     }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
