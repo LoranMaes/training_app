@@ -1,0 +1,29 @@
+{% extends "main.twig" %}
+
+{% block headerLinks %}
+	<link rel="stylesheet" href="{{ url('stylesheets/auth.css') }}">
+{% endblock %}
+
+{% block pageContent %}
+	<div id="loginBlock">
+		<img id="logo" src="{{ url('img/logo.png') }}" alt="logo astride">
+
+		<hr class="half">
+
+		<h1>Login as athlete</h1>
+
+		<form action="{{ url('login') }}" method="post">
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email">
+
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password">
+
+			<input type="hidden" name="moduleAction" value="submitLogin">
+			<input type="submit" value="Log in">
+		</form>
+		<p>Already have an account?
+			<a class="second" href="{{ url("register") }}">Register here</a>
+		</p>
+	</div>
+{% endblock %}

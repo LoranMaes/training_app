@@ -47,4 +47,14 @@ class AuthController
         header('location: /alela/');
         exit();
     }
+
+    public function showLogin()
+    {
+        echo $this->twig->render('login.twig', []);
+    }
+
+    public function login()
+    {
+        echo $this->twig->render('login.twig', []);
+    }
 }

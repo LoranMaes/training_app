@@ -14,4 +14,8 @@ $router->before('GET|POST', '/.*', function () {
 // add your routes and run!
 $router->get('/', 'DashboardController@showDashboard');
 
+// Login for users
+$router->get('/login', 'AuthController@showLogin');
+$router->post('/login', 'AuthController@login');
+
 $router->run();
