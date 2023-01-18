@@ -96,6 +96,28 @@ input[type="submit"]{
     font-weight: 800;
 }
 
+.errorInput{
+    color: red;
+    border: 1px solid rgba(255, 0, 0, 0.5)!important;
+    box-shadow: 0 0 8px 0 rgba(255, 0, 0, 0.25)!important;
+}
+
+.error{
+    color: red;
+}
+
+label.important{
+    position: relative;
+    width: fit-content;
+}
+label.important::after{
+    position: absolute;
+    content: '*';
+    color: red;
+    right: -2rem;
+    top: 0;
+}
+
 .passwordBox{
     position: relative;
 }
