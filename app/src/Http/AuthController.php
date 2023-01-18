@@ -9,7 +9,7 @@ class AuthController
 
     public function __construct()
     {
-        $this->connection = DatabaseConnector::getConnection('helpdesk');
+        $this->connection = DatabaseConnector::getConnection('astride');
 
         // bootstrap Twig
         $loader = new \Twig\Loader\FilesystemLoader(__DIR__ . '/../../resources/templates');
@@ -56,5 +56,15 @@ class AuthController
     public function login()
     {
         echo $this->twig->render('login.twig', []);
+    }
+
+    public function showRegister()
+    {
+        echo $this->twig->render('register.twig', []);
+    }
+
+    public function register()
+    {
+        echo $this->twig->render('register.twig', []);
     }
 }

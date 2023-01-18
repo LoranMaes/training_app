@@ -9,7 +9,7 @@ class DashboardController
 
     public function __construct()
     {
-        $this->connection = DatabaseConnector::getConnection('helpdesk');
+        $this->connection = DatabaseConnector::getConnection('astride');
 
         // bootstrap Twig
         $loader = new \Twig\Loader\FilesystemLoader(__DIR__ . '/../../resources/templates');

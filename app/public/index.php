@@ -12,10 +12,26 @@ $router->before('GET|POST', '/.*', function () {
 });
 
 // add your routes and run!
+$router->before('GET|POST', '/', function () {
+    if (!isset($_SESSION['user'])) {
+        header('Location: /login');
+        exit;
+    }
+});
 $router->get('/', 'DashboardController@showDashboard');
 
 // Login for users
+$router->before('GET|POST', '/login', function () {
+    if (isset($_SESSION['user'])) {
+        header('Location: /');
+        exit;
+    }
+});
 $router->get('/login', 'AuthController@showLogin');
 $router->post('/login', 'AuthController@login');
+
+// For people who register
+$router->get('/register', 'AuthController@showRegister');
+$router->post('/register', 'AuthController@register');
 
 $router->run();
