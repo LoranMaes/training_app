@@ -1,5 +1,5 @@
 <header>
-	<a id="logo" href="{{ url('/') }}">
+	<a id="logo" href="{{ url('') }}">
 		<img src="{{ url('img/logo.png') }}" alt="logo Astride for header">
 	</a>
 	<button data-active="false" id="hamburger">
@@ -10,43 +10,49 @@
 	{% if athlete %}
 		<ul class="menu-options">
 			<li>
-				<span class="material-symbols-outlined">home</span>
-				<a href="{{ url('/') }}">Dashboard</a>
+				<a href="{{ url('') }}">
+					<span class="material-symbols-outlined">home</span>
+					Dashboard</a>
 				<hr>
 			</li>
 			<li>
-				<span class="material-symbols-outlined">person</span>
-				<a href="{{ url('/trainers') }}">Search trainers</a>
+				<a href="{{ url('trainers') }}">
+					<span class="material-symbols-outlined">person</span>
+					Search trainers</a>
 				<hr>
 			</li>
 			<li>
-				<span class="material-symbols-outlined">search</span>
-				<a href="{{ url('/my-profile') }}">My profile</a>
+				<a href="{{ url('my-profile') }}">
+					<span class="material-symbols-outlined">search</span>
+					My profile</a>
 				<hr>
 			</li>
 			<li class="logout-header">
-				<a href="{{ url('/logout') }}">Logout</a>
+				<a href="{{ url('logout') }}">Logout</a>
 			</li>
 		</ul>
 	{% else %}
 		<ul class="menu-options">
 			<li>
-				<span class="material-symbols-outlined">home</span>
-				<a href="{{ url('/') }}">Dashboard</a>
+				<a href="{{ url('') }}">
+					<span class="material-symbols-outlined">home</span>
+					Dashboard</a>
 				<hr>
 			</li>
 			<li>
-				<span class="material-symbols-outlined">groups</span>
-				<a href="{{ url('/my-athletes') }}">My athletes</a>
+				<a href="{{ url('my-athletes') }}">
+					<span class="material-symbols-outlined">groups</span>
+					My athletes</a>
 				<hr>
 			</li>
 			<li>
-				<span class="material-symbols-outlined">search</span>
-				<a href="{{ url('/my-profile') }}">My profile</a>
+				<a href="{{ url('my-profile') }}">
+					<span class="material-symbols-outlined">search</span>
+					My profile</a>
 				<hr>
 			</li>
 			<li class="logout-header">
-				<a href="{{ url('/logout') }}">Logout</a>
+				<a href="{{ url('logout') }}">Logout</a>
 			</li>
 		</ul>
 	{% endif %}

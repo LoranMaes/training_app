@@ -85,10 +85,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-body {
-    background-color: #FFFFFF;
-    margin: 0;
-}
 .navtop {
     background-color: #3b4656;
     height: 60px;
