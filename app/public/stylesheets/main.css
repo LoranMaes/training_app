@@ -9,6 +9,7 @@
 html{
     font-size: 62.5%;
     font-family: 'Poppins', 'Sans-Serif';
+    background-color: var(--bg);
 }
 
 body{
@@ -17,6 +18,8 @@ body{
     font-size: 1.2rem;
     padding: 1.2rem;
     color: var(--primary);
+    overflow-x: hidden;
+    background-color: var(--bg);
 }
 
 .half{
@@ -27,23 +30,139 @@ body{
     color: var(--secundary)
 }
 
+a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: var(--bg);
+}
+
+#hamburger[data-active="false"] + ul.menu-options{
+    margin-top: -100vh;
+    opacity: 0;
+}
+#hamburger[data-active="true"] + ul.menu-options{
+    margin-top: 2.4rem;
+    opacity: 1;
+}
+
+header ul.menu-options{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+    padding: 0;
+    margin-bottom: 2.4rem;
+    padding: .8rem 1.6rem;
+
+    transition: all 750ms ease-out;
+}
+
+header ul li{
+    display: flex;
+    gap: 1.6rem;
+    position: relative;
+    align-items: center;
+}
+header ul li span,
+header ul li img{
+    width: 15%;
+    object-fit: contain;
+}
+
+li a{
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+header hr{
+    background-color: var(--primary);
+    opacity: .25;
+    border: none;
+    height: 1px;
+    border-radius: 9999px;
+    width: 75%;
+    position: absolute;
+    bottom: -1.6rem;
+    left: 0;
+}
+
+li.logout-header a{
+    background: var(--secundary);
+    border-radius: 1.4rem;
+    color: var(--bg);
+    padding: .8rem 1.6rem;
+}
+
+#hamburger{
+    position: relative;
+    z-index: 50;
+    border: none;
+    background: none;
+    width: calc(1.6rem * 2 + 2rem);
+    height: calc(1.6rem * 2 + 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+    padding: 1.6rem;
+    cursor: pointer;
+}
+
+#hamburger span{
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 9999px;
+    pointer-events: none;
+}
+
+#logo{
+    width: 12.5rem;
+    height: auto;
+    padding: .8rem 1.6rem;
+}
+#logo img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
 @media screen and (min-width: 720px) {
     body{
         font-size: 1.6rem;
     }
+    /* Header */
 }
 
 @media screen and (min-width: 1280px) {
     body{
         padding: clamp(1.6rem, 8vw, 4rem);
     }
-
+    
     .actionLink{
         transition: all 250ms;
     }
-
+    
     .actionLink:hover{
         transition: all 250ms;
         text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    }
+    /* Header */
+    #hamburger{
+        position: absolute;
+        visibility: hidden;
+        display: none;
     }
 }

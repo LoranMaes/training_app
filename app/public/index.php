@@ -62,5 +62,7 @@ $router->get('/register', 'AuthController@showRegister');
 $router->post('/register', 'AuthController@register');
 
 // TODO - Routes for registering and logging in as trainer.
+// TODO - Routes for a users personal dashboard.
+// TODO - Routes for all trainers using Astride with filter what they are looking for.
 
 $router->run();

@@ -22,8 +22,12 @@ class DashboardController
 
     public function showDashboard()
     {
+        $user = $_SESSION['athlete'];
+
         echo $this->twig->render('athlete/dashboard.twig', [
             'calendar' => new \Calendar('2021-02-02'),
+            'athlete' => true,
+            'user' => $user,
         ]);
     }
 }
