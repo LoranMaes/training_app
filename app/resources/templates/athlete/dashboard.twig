@@ -8,7 +8,12 @@
 {% block pageContent %}
 	<h1>Hello
 		{{ user.firstname }}
-		{{ user.lastname }}</h1>
+		{{ user.lastname }}
+		<img src="https://api.dicebear.com/5.x/pixel-art/svg?seed={{ user.firstname }}
+								&amp;flip=true
+								&amp;radius=30
+								&amp;backgroundColor=d1d4f9
+								&amp;hair={% if user.gender == 'MALE' %}short10{% else %}long12{% endif %}" alt="User as pixelart"></h1>
 
 	{{ calendar|raw }}
 {% endblock %}

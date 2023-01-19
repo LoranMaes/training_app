@@ -13,3 +13,9 @@ h1{
     width: 100%;
     justify-content: space-between;
 }
+
+h1 img{
+    height: 5rem;
+    width: 5rem;
+    object-fit: contain;
+}
